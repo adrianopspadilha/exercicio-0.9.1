@@ -1,0 +1,100 @@
+:root{
+    --cor-enviado:  #3b4a54;
+    --cor-visto1:   aqua;
+    --cor-visto2:   grey;
+    --cor-recebido: #00a884;
+    --cor-letra:    white;
+    --cor-conteiner:black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.conteiner{
+    background-color: var(--cor-conteiner);
+    width: 550px;
+    height: 450px;
+    border-radius: 10px;
+}
+.titulo{
+    padding-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+}
+h1{
+    margin: 3px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: var(--cor-letra);
+    font-family: arial;
+}
+.mensagem{
+    color: var(--cor-letra);
+    padding: 10px;
+    font-family: arial;
+}
+button{
+    padding-top: 20px;
+    background-color: transparent;
+    fill: var(--cor-letra);
+    border: none;
+    font-size: 30px;
+}
+button:hover{
+    transform: scale(1.2);
+}
+.recebido{
+    position: relative;
+    padding-right: 30px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-recebido);
+    width: fit-content;
+    margin: 5px;
+    border-radius: 13px;
+    margin-left: auto;
+}
+.enviado{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-enviado);
+    width: fit-content;
+    margin: 5px;
+    border-radius: 13px;
+}
+.visto1{
+    fill: var(--cor-visto1);
+    position: absolute;
+    bottom: 1px;
+    right: 7px;
+    font-size: 13px;
+}
+.visto2{
+    fill: var(--cor-visto2);
+    position: absolute;
+    bottom: 1px;
+    right: 7px;
+    font-size: 13px;
+}
+hr{
+    border: none;
+    border-bottom: 3px dotted white;
+    margin: 10px;
+}
+.seta{
+    position: relative;
+    top: -10px;
+    right: -10px;
+    fill: none;
+}
+.seta:hover{
+    cursor: pointer;
+    fill: white;
+}
